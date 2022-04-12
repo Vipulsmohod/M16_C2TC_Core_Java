@@ -8,20 +8,31 @@ public class Assignment {
 	{
 		this.name=name;
 		System.out.println(" Parameterised Constructor ");
+		
+	}
+	void m1()
+	{
 		System.out.println("Name is "+name);
 	}
+	
 
 	public Assignment(int id) 
 	{
 		this.id=id;
 		System.out.println(" Simple Constructor ");
-		System.out.println("Your Id is "+id);
+		
+	}
+	void m2() 
+	{
+		System.out.println(" Id is "+id);
 	}
 
 	public static void main(String[] args)
 	{
 		  Assignment a=new Assignment(1);
 		  Assignment a1=new Assignment("Vipul");
+		           a1.m1();
+		           a.m2();
 		
 	}
 
